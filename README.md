@@ -2,10 +2,10 @@
 # example 1. Create class integration
 
 ```python
-from amowrapper.__oauth.config import OAuthConfig
+from amowrapper.oauth.config import OAuthConfig
 import os
 from dotenv import load_dotenv
-from amowrapper.__oauth.exceptions import OAuthError
+from amowrapper.oauth.exceptions import OAuthError
 
 # Загрузка переменных окружения из файла .env
 load_dotenv()
@@ -21,7 +21,7 @@ integration = OAuthConfig(
 # example 2. Create client
 
 ```python
-from amowrapper.__oauth.factory import OAuthFactory
+from amowrapper.oauth.factory import OAuthFactory
 
 client: OAuthFactory = OAuthFactory(OAuthConfig=integration)
 ```
@@ -30,8 +30,8 @@ client: OAuthFactory = OAuthFactory(OAuthConfig=integration)
 # Example 3. Add client to middleware and make simple requests from api reference
 
 ```python
-from amowrapper.__oauth.middleware import OAuthMiddleware
-from amowrapper.__oauth.exceptions import OAuthLongTermTokenExpired, OAuthAccessTokenExpired
+from amowrapper.oauth.middleware import OAuthMiddleware
+from amowrapper.oauth.exceptions import OAuthLongTermTokenExpired, OAuthAccessTokenExpired
 
 middleware_client = OAuthMiddleware(oauth_client=client)
 
@@ -44,5 +44,3 @@ except (OAuthAccessTokenExpired, OAuthLongTermTokenExpired) as e:
 
     pass
 ```
-
-just test
