@@ -1,10 +1,10 @@
-from __oauth import exceptions
-from __oauth.client import OAuthApiClient
-from __oauth.config import WidgetConfig
-from __oauth.middleware import OAuthMiddleware
-from __oauth.button import OAuthButtonManager
-from __oauth.drive import FileUploadManager
-from __oauth.amojo import AmojoApiManager
+from oauth import exceptions
+from oauth.client import OAuthApiClient
+from oauth.config import WidgetConfig
+from oauth.middleware import OAuthMiddleware
+from oauth.button import OAuthButtonManager
+from oauth.drive import FileUploadManager
+from oauth.amojo import AmojoApiManager
 
 
 __version__ = "0.1.0"

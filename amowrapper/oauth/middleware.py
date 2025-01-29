@@ -1,7 +1,7 @@
 from .client import OAuthV4Client
 from .exceptions import OAuthLongTermTokenExpired, OAuthAccessTokenExpired
 from .exceptions import OAuthTokenNotFoundError
-from ..__helpers import OAuthV4Helper
+from ..helpers import OAuthV4Helper
 
 class OAuthMiddleware:
     """
