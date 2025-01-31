@@ -1,0 +1,2 @@
+KOMMO_V4_CONST = ''
+AMOCRM_V4_CONST = ''

@@ -1,2 +1,2 @@
-from oauth import OAuthV4Helper
-from segment_helper import OAuthV4SegmentHelper
+from amowrapper.helpers.jwt_checker.jwt import OAuthV4Helper
+from amowrapper.helpers.segment_checker.segment_helper import OAuthV4SegmentHelper

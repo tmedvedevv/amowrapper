@@ -1,3 +1,5 @@
 .idea
 /examples/
 /poetry.lock
+test.py
+tests
